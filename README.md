@@ -8,7 +8,11 @@ For example, the following command load the image `example/ramp.png` and quantif
 ```sh
 ./dither 3 example/ramp.png
 ```
-The program will systematically export the dithered result to the .BMP file  `output.bmp`.
+Here is the input and output for this particular example: 
+![alt text](examples/ramp.png "the input image")
+![alt text](examples/ramp_3.png "the output image")
+
+Note that the program will systematically export the dithered result to the .BMP file  `output.bmp`.
 
 ### License
 
