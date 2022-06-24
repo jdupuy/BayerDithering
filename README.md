@@ -9,6 +9,7 @@ For example, the following command load the image `example/ramp.png` and quantif
 ./dither 3 example/ramp.png
 ```
 Here is the input and output for this particular example: 
+
 ![alt text](examples/ramp.png "the input image")
 ![alt text](examples/ramp_3.png "the output image")
 
