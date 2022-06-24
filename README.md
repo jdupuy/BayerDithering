@@ -1,4 +1,4 @@
-This repository provides source code to quantize and dither a image using the Bayer matrix.
+This repository provides source code to quantize and dither an image using the Bayer matrix.
 The code supports both greyscale and RGB images.
 
 ### Usage
