@@ -7,8 +7,8 @@ Compile the code and run it by specifying the number of colors you want per chan
 For example, the following command load the image `example/ramp.png` and quantifies it using 3 colors 
 ```sh
 ./dither 3 example/ramp.png
-``
-The program will systematically export the dithered result to the .BMP file  `output.bmp`
+```
+The program will systematically export the dithered result to the .BMP file  `output.bmp`.
 
 ### License
 
