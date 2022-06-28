@@ -19,13 +19,12 @@ bool IsPowerOfTwo(uint32_t x)
 
 uint32_t FindMSB(uint32_t x)
 {
-    uint32_t r, shift;
+    uint32_t r = (x & 0xAAAAAAAAu) != 0u;
 
-    r =     (x > 0xFFFFu) << 4u; x >>= r;
-    shift = (x > 0xFFu  ) << 3u; x >>= shift; r |= shift;
-    shift = (x > 0xFu   ) << 2u; x >>= shift; r |= shift;
-    shift = (x > 0x3u   ) << 1u; x >>= shift; r |= shift;
-                                              r |= (x >> 1u);
+    r |= ((x & 0xFFFF0000u) != 0) << 4;
+    r |= ((x & 0xFF00FF00u) != 0) << 3;
+    r |= ((x & 0xF0F0F0F0u) != 0) << 2;
+    r |= ((x & 0xCCCCCCCCu) != 0) << 1;
 
     return r;
 }
