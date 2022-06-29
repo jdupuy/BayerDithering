@@ -4,7 +4,7 @@ The code supports both greyscale and RGB images.
 ### Usage
 
 Compile the code and run it by specifying the number of colors you want per channel, and the path to the image.
-For example, the following command load the image `example/ramp.png` and quantifies it using 3 colors 
+For example, the following command loads the image `example/ramp.png` and quantifies it using 3 colors 
 ```sh
 ./dither 3 example/ramp.png
 ```
