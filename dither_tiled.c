@@ -92,10 +92,6 @@ int main(int argc, const char **argv)
         LOG("error: loading failed");
         return EXIT_FAILURE;
     }
-    if (input.width != input.height) {
-        LOG("error: image must be square");
-        return EXIT_FAILURE;
-    }
     if (!IsPowerOfTwo(bayerMatrixSize)) {
         LOG("error: bayerMatrixSize must be a power of two");
         return EXIT_FAILURE;
